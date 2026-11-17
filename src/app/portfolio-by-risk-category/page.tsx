@@ -105,8 +105,8 @@ export default function RiskCategoryPortfolioPage() {
     <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900">
       <Navbar />
 
-      {/* Concise Hero Banner */}
-      <section className="relative bg-slate-950 text-white overflow-hidden py-9 sm:py-11 lg:py-13 border-b border-slate-800">
+      {/* Hero Banner with Corporate Blue & Yellow Accents */}
+      <section className="relative bg-[#0C2340] text-white overflow-hidden py-9 sm:py-11 lg:py-13 border-b border-slate-800">
         <div className="absolute inset-0 -z-10">
           <Image
             src="/images/heroes/risk-categories-hero.jpg"
@@ -116,24 +116,24 @@ export default function RiskCategoryPortfolioPage() {
             className="object-cover object-center opacity-25"
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-emerald-950/70" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0C2340] via-[#0C2340]/95 to-[#133863]/85" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
             <div className="max-w-3xl space-y-3">
               {/* Breadcrumb & Navigation Pill */}
-              <div className="flex flex-wrap items-center gap-2 text-xs font-semibold text-emerald-400">
+              <div className="flex flex-wrap items-center gap-2 text-xs font-semibold text-amber-400">
                 <Link href="/" className="hover:underline">
                   Home
                 </Link>
-                <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
+                <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
                 <span className="text-white">Portfolio by Risk Category</span>
               </div>
 
               {/* Title & Badge */}
-              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 backdrop-blur-md">
-                <ShieldCheck className="w-3 h-3 text-emerald-400" />
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-400/20 text-amber-300 border border-amber-400/40 backdrop-blur-md">
+                <ShieldCheck className="w-3 h-3 text-amber-400" />
                 <span>Technical Underwriting &bull; 9 Risk Disciplines</span>
               </div>
 
@@ -147,25 +147,25 @@ export default function RiskCategoryPortfolioPage() {
 
               {/* Concise Portfolio Key Metrics */}
               <div className="flex flex-wrap items-center gap-2.5 pt-1 text-xs text-slate-300">
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-900/80 border border-slate-800 backdrop-blur-sm">
-                  <span className="font-bold text-emerald-400">45</span>
+                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#081B30]/90 border border-slate-700/80 backdrop-blur-sm">
+                  <span className="font-bold text-amber-400">45</span>
                   <span>Products</span>
                 </div>
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-900/80 border border-slate-800 backdrop-blur-sm">
-                  <span className="font-bold text-indigo-400">9</span>
+                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#081B30]/90 border border-slate-700/80 backdrop-blur-sm">
+                  <span className="font-bold text-amber-400">9</span>
                   <span>Risk Disciplines</span>
                 </div>
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-900/80 border border-slate-800 backdrop-blur-sm">
-                  <span className="font-bold text-cyan-400">100%</span>
+                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#081B30]/90 border border-slate-700/80 backdrop-blur-sm">
+                  <span className="font-bold text-amber-400">100%</span>
                   <span>IDRA Compliant</span>
                 </div>
               </div>
             </div>
 
             {/* Concise Switcher Card to Alternative View */}
-            <div className="lg:max-w-xs w-full bg-slate-900/90 rounded-xl p-4 border border-slate-700/80 backdrop-blur-md shadow-lg flex flex-col justify-between space-y-3">
+            <div className="lg:max-w-xs w-full bg-[#081B30]/90 rounded-xl p-4 border border-slate-700/80 backdrop-blur-md shadow-lg flex flex-col justify-between space-y-3">
               <div className="space-y-1">
-                <div className="flex items-center gap-1.5 text-[11px] font-bold text-emerald-400 uppercase tracking-wider">
+                <div className="flex items-center gap-1.5 text-[11px] font-bold text-amber-400 uppercase tracking-wider">
                   <ArrowRightLeft className="w-3 h-3" />
                   <span>Alternative View</span>
                 </div>
@@ -179,7 +179,7 @@ export default function RiskCategoryPortfolioPage() {
 
               <Link
                 href="/portfolio-by-market-segment"
-                className="w-full inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white transition-all shadow-sm group"
+                className="w-full inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-lg text-xs font-bold bg-amber-400 text-slate-950 hover:bg-amber-300 transition-all shadow-sm group"
               >
                 <span>Switch to Market Segments</span>
                 <ChevronRight className="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" />
@@ -189,15 +189,18 @@ export default function RiskCategoryPortfolioPage() {
         </div>
       </section>
 
+      {/* Signature Yellow Ribbon Accent directly under Hero */}
+      <div className="h-[3.5px] bg-amber-400 w-full shadow-xs" />
+
       {/* Mobile Sticky Category Pills */}
-      <div className="lg:hidden sticky top-20 z-30 bg-white/95 backdrop-blur-md border-b border-slate-200 px-3 py-2.5 shadow-2xs">
+      <div className="lg:hidden sticky top-20 z-30 bg-[#0C2340] border-b border-slate-800 px-3 py-2.5 shadow-md">
         <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none pb-0.5">
           <button
             onClick={() => setSelectedCategory("all")}
             className={`px-3 py-1 rounded-lg text-xs font-bold whitespace-nowrap transition-all ${
               selectedCategory === "all"
-                ? "bg-slate-900 text-white shadow-xs"
-                : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                ? "bg-amber-400 text-slate-950 shadow-xs"
+                : "bg-white/10 text-slate-200 hover:bg-white/15"
             }`}
           >
             All Disciplines (45)
@@ -211,8 +214,8 @@ export default function RiskCategoryPortfolioPage() {
                 onClick={() => setSelectedCategory(cat.id)}
                 className={`flex items-center gap-1.5 px-3 py-1 rounded-lg text-xs font-bold whitespace-nowrap transition-all ${
                   isSelected
-                    ? "bg-emerald-700 text-white shadow-xs"
-                    : "bg-slate-100 text-slate-600 hover:bg-emerald-50 hover:text-emerald-800"
+                    ? "bg-amber-400 text-slate-950 shadow-xs"
+                    : "bg-white/10 text-slate-200 hover:bg-white/15 hover:text-white"
                 }`}
               >
                 <Icon className="w-3 h-3" />
@@ -225,7 +228,7 @@ export default function RiskCategoryPortfolioPage() {
         </div>
       </div>
 
-      {/* Main Split-Panel Layout Container (Tightened overall padding & gap) */}
+      {/* Main Split-Panel Layout Container */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 w-full flex-1">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
           {/* ========================================================= */}
@@ -240,7 +243,7 @@ export default function RiskCategoryPortfolioPage() {
                   <h3 className="text-[11px] font-extrabold uppercase tracking-wider text-slate-400">
                     Risk Disciplines
                   </h3>
-                  <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">
+                  <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-blue-50 text-blue-950 border border-blue-200/60">
                     9 Categories
                   </span>
                 </div>
@@ -253,7 +256,7 @@ export default function RiskCategoryPortfolioPage() {
                     placeholder="Search peril or product..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full pl-8 pr-7 py-1.5 rounded-lg text-xs bg-slate-50 border border-slate-200 focus:border-emerald-500 focus:bg-white focus:outline-none transition-all placeholder:text-slate-400"
+                    className="w-full pl-8 pr-7 py-1.5 rounded-lg text-xs bg-slate-50 border border-slate-200 focus:border-amber-400 focus:bg-white focus:outline-none transition-all placeholder:text-slate-400"
                   />
                   {searchQuery && (
                     <button
@@ -274,7 +277,7 @@ export default function RiskCategoryPortfolioPage() {
                   onClick={() => setSelectedCategory("all")}
                   className={`w-full flex items-center justify-between p-2 rounded-xl text-left transition-all ${
                     selectedCategory === "all"
-                      ? "bg-slate-900 text-white shadow-xs font-semibold"
+                      ? "bg-[#0C2340] text-white shadow-xs font-semibold border-l-4 border-amber-400"
                       : "text-slate-700 hover:bg-slate-100/80 font-medium"
                   }`}
                 >
@@ -282,7 +285,7 @@ export default function RiskCategoryPortfolioPage() {
                     <div
                       className={`w-7 h-7 rounded-lg flex items-center justify-center transition-colors ${
                         selectedCategory === "all"
-                          ? "bg-white/10 text-white"
+                          ? "bg-white/10 text-amber-400"
                           : "bg-slate-100 text-slate-600"
                       }`}
                     >
@@ -304,7 +307,7 @@ export default function RiskCategoryPortfolioPage() {
                   <span
                     className={`text-[11px] font-bold px-2 py-0.5 rounded-full ${
                       selectedCategory === "all"
-                        ? "bg-white/20 text-white"
+                        ? "bg-amber-400 text-slate-950"
                         : "bg-slate-100 text-slate-600"
                     }`}
                   >
@@ -323,7 +326,7 @@ export default function RiskCategoryPortfolioPage() {
                       onClick={() => setSelectedCategory(cat.id)}
                       className={`w-full flex items-center justify-between p-2 rounded-xl text-left transition-all ${
                         isSelected
-                          ? "bg-emerald-700 text-white shadow-xs font-semibold"
+                          ? "bg-[#0C2340] text-white shadow-xs font-semibold border-l-4 border-amber-400"
                           : "text-slate-700 hover:bg-slate-100/80 font-medium"
                       }`}
                     >
@@ -331,7 +334,7 @@ export default function RiskCategoryPortfolioPage() {
                         <div
                           className={`w-7 h-7 rounded-lg flex items-center justify-center transition-colors ${
                             isSelected
-                              ? "bg-white/20 text-white"
+                              ? "bg-white/10 text-amber-400"
                               : "bg-slate-100 text-slate-600"
                           }`}
                         >
@@ -341,7 +344,7 @@ export default function RiskCategoryPortfolioPage() {
                           <div className="text-xs font-bold">{cat.title}</div>
                           <div
                             className={`text-[10px] line-clamp-1 max-w-[125px] ${
-                              isSelected ? "text-emerald-100" : "text-slate-400"
+                              isSelected ? "text-amber-300" : "text-slate-400"
                             }`}
                           >
                             {cat.subtitle}
@@ -351,7 +354,7 @@ export default function RiskCategoryPortfolioPage() {
                       <span
                         className={`text-[11px] font-bold px-2 py-0.5 rounded-full ${
                           isSelected
-                            ? "bg-white/20 text-white"
+                            ? "bg-amber-400 text-slate-950 font-bold"
                             : "bg-slate-100 text-slate-600"
                         }`}
                       >
@@ -369,7 +372,7 @@ export default function RiskCategoryPortfolioPage() {
                   {selectedSegment !== "all" && (
                     <button
                       onClick={() => setSelectedSegment("all")}
-                      className="text-emerald-700 hover:underline text-[10px]"
+                      className="text-amber-600 hover:underline text-[10px] font-bold"
                     >
                       Reset
                     </button>
@@ -379,7 +382,7 @@ export default function RiskCategoryPortfolioPage() {
                   <select
                     value={selectedSegment}
                     onChange={(e) => setSelectedSegment(e.target.value)}
-                    className="w-full py-1.5 pl-2.5 pr-7 rounded-lg text-xs font-medium bg-slate-50 border border-slate-200 focus:border-emerald-500 focus:bg-white focus:outline-none appearance-none cursor-pointer"
+                    className="w-full py-1.5 pl-2.5 pr-7 rounded-lg text-xs font-medium bg-slate-50 border border-slate-200 focus:border-amber-400 focus:bg-white focus:outline-none appearance-none cursor-pointer"
                   >
                     <option value="all">All Market Segments</option>
                     <option value="Corporate">Corporate Only (31)</option>
@@ -390,17 +393,17 @@ export default function RiskCategoryPortfolioPage() {
                 </div>
               </div>
 
-              {/* Concise Claims & Survey Dispatch Card */}
-              <div className="p-2.5 rounded-xl bg-gradient-to-br from-emerald-50 to-slate-50 border border-emerald-100 text-[11px] space-y-1">
-                <div className="flex items-center gap-1 font-bold text-emerald-900">
-                  <Headphones className="w-3.5 h-3.5 text-emerald-600" />
+              {/* Concise Claims & Survey Dispatch Card with Yellow Accents */}
+              <div className="p-2.5 rounded-xl bg-gradient-to-br from-[#0C2340]/5 to-amber-50/40 border border-amber-200/60 text-[11px] space-y-1">
+                <div className="flex items-center gap-1 font-bold text-[#0C2340]">
+                  <Headphones className="w-3.5 h-3.5 text-amber-500" />
                   <span>Claims & Survey Desk</span>
                 </div>
                 <p className="text-[10px] text-slate-600 leading-snug">
                   Immediate surveyor mobilization and 24/7 technical claims intake across all industrial zones.
                 </p>
-                <div className="pt-0.5 flex items-center justify-between text-[10px] font-bold text-emerald-800">
-                  <span>Hotline: 16457</span>
+                <div className="pt-0.5 flex items-center justify-between text-[10px] font-bold text-[#0C2340]">
+                  <span className="text-amber-600">Hotline: 16457</span>
                   <span className="text-slate-500">Fast-Track</span>
                 </div>
               </div>
@@ -412,7 +415,7 @@ export default function RiskCategoryPortfolioPage() {
           {/* ========================================================= */}
           <main className="col-span-12 lg:col-span-8 xl:col-span-9 space-y-4">
             {/* Concise Category Hero Banner */}
-            <div className="relative rounded-2xl overflow-hidden bg-slate-900 text-white p-5 sm:p-6 lg:p-7 border border-slate-800 shadow-sm">
+            <div className="relative rounded-2xl overflow-hidden bg-[#0C2340] text-white p-5 sm:p-6 lg:p-7 border border-slate-800 shadow-sm">
               <div className="absolute inset-0 -z-10">
                 <Image
                   src={
@@ -425,17 +428,17 @@ export default function RiskCategoryPortfolioPage() {
                   sizes="(max-width: 1200px) 100vw, 1000px"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#0C2340] via-[#0C2340]/90 to-transparent" />
               </div>
 
               <div className="max-w-2xl space-y-2">
                 <div className="flex flex-wrap items-center gap-2">
-                  <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                  <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-amber-400/20 text-amber-300 border border-amber-400/30">
                     {selectedCategory === "all"
                       ? "Comprehensive Underwriting View"
                       : `${currentCategoryInfo?.productCount} Specialized Products`}
                   </span>
-                  <span className="text-[11px] text-slate-400 font-medium">
+                  <span className="text-[11px] text-slate-300 font-medium">
                     {selectedCategory === "all"
                       ? "9 Risk Disciplines"
                       : currentCategoryInfo?.subtitle}
@@ -456,13 +459,13 @@ export default function RiskCategoryPortfolioPage() {
 
                 <div className="pt-1 flex flex-wrap items-center gap-2.5 text-[11px] text-slate-300">
                   <div className="flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-white/10 backdrop-blur-md">
-                    <CheckCircle className="w-3 h-3 text-emerald-400" />
+                    <CheckCircle className="w-3 h-3 text-amber-400" />
                     <span>
                       <strong>{filteredProducts.length}</strong> Products Displayed
                     </span>
                   </div>
                   {selectedSegment !== "all" && (
-                    <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                    <div className="flex items-center gap-1 px-2.5 py-0.5 rounded-md bg-amber-400/20 text-amber-300 border border-amber-400/30">
                       <span>Market Segment: {selectedSegment}</span>
                       <button
                         onClick={() => setSelectedSegment("all")}
@@ -475,6 +478,9 @@ export default function RiskCategoryPortfolioPage() {
                 </div>
               </div>
             </div>
+
+            {/* Signature Yellow Ribbon Accent stripe on right panel */}
+            <div className="h-[2px] bg-amber-400/80 w-full rounded-full" />
 
             {/* Concise Controls Bar: View Toggle, Sort, Search Feedback */}
             <div className="bg-white rounded-xl border border-slate-200/90 p-3 shadow-2xs flex flex-col sm:flex-row items-center justify-between gap-3">
@@ -490,7 +496,7 @@ export default function RiskCategoryPortfolioPage() {
                       setSearchQuery("");
                       setSelectedSegment("all");
                     }}
-                    className="text-emerald-700 hover:underline font-semibold ml-2 text-[11px]"
+                    className="text-amber-600 hover:underline font-bold ml-2 text-[11px]"
                   >
                     Clear active filters
                   </button>
@@ -507,7 +513,7 @@ export default function RiskCategoryPortfolioPage() {
                     onChange={(e) =>
                       setSortBy(e.target.value as "default" | "name" | "code")
                     }
-                    className="py-1 pl-2 pr-6 rounded-lg text-xs font-semibold bg-slate-50 border border-slate-200 focus:outline-none focus:border-emerald-500 cursor-pointer"
+                    className="py-1 pl-2 pr-6 rounded-lg text-xs font-semibold bg-slate-50 border border-slate-200 focus:outline-none focus:border-amber-400 cursor-pointer"
                   >
                     <option value="default">Default</option>
                     <option value="name">Name (A-Z)</option>
@@ -521,7 +527,7 @@ export default function RiskCategoryPortfolioPage() {
                     onClick={() => setViewMode("grid")}
                     className={`flex items-center gap-1 px-2 py-1 rounded-md text-xs font-bold transition-all ${
                       viewMode === "grid"
-                        ? "bg-white text-slate-900 shadow-2xs"
+                        ? "bg-[#0C2340] text-amber-300 shadow-2xs"
                         : "text-slate-600 hover:text-slate-900"
                     }`}
                     title="Grid View"
@@ -533,7 +539,7 @@ export default function RiskCategoryPortfolioPage() {
                     onClick={() => setViewMode("editorial")}
                     className={`flex items-center gap-1 px-2 py-1 rounded-md text-xs font-bold transition-all ${
                       viewMode === "editorial"
-                        ? "bg-white text-slate-900 shadow-2xs"
+                        ? "bg-[#0C2340] text-amber-300 shadow-2xs"
                         : "text-slate-600 hover:text-slate-900"
                     }`}
                     title="Editorial / Detailed View"
@@ -570,7 +576,7 @@ export default function RiskCategoryPortfolioPage() {
                       setSelectedCategory("all");
                       setSelectedSegment("all");
                     }}
-                    className="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-emerald-700 text-white hover:bg-emerald-800 transition-colors shadow-xs"
+                    className="px-3.5 py-1.5 rounded-lg text-xs font-bold bg-[#0C2340] text-amber-400 hover:bg-[#133863] border-b-2 border-amber-400 transition-colors shadow-xs"
                   >
                     Reset All Filters
                   </button>
